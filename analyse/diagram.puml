@@ -1,45 +1,27 @@
 @startuml
 left to right direction
 skinparam packageStyle rectangle
-skinparam usecase {
-  BackgroundColor White
-  BorderColor Black
-}
-skinparam actor {
-  BackgroundColor White
-  BorderColor Black
-}
-skinparam rectangle {
-  BorderColor Black
-}
 
-actor "Client" as C
-actor "Étudiant" as S
+actor "Visiteur" as Visitor
+actor "Recruteur" as Recruiter
+Recruiter <|-- Visitor
 
 rectangle "Portfolio Laravel" {
-  usecase "Consulter\nAccueil" as UC1
-  usecase "Consulter\nÀ propos" as UC2
-  usecase "Consulter\nProjets" as UC3
-  usecase "Voir détails\nProjet" as UC4
-  usecase "Consulter\nServices" as UC5
-  usecase "Envoyer\nMessage (Contact)" as UC6
+  usecase "Consulter\nAccueil" as UC_Home
+  usecase "Consulter\nÀ propos" as UC_About
+  usecase "Consulter\nProjets" as UC_Projects
+  usecase "Voir détails\nProjet" as UC_ProjectDetails
+  usecase "Consulter\nServices" as UC_Services
+  usecase "Envoyer\nMessage (Contact)" as UC_Contact
 }
 
-C -- UC1
-C -- UC2
-C -- UC3
-C -- UC4
-C -- UC5
-C -- UC6
+Visitor -- UC_Home
+Visitor -- UC_About
+Visitor -- UC_Projects
+Visitor -- UC_ProjectDetails
+Visitor -- UC_Services
+Visitor -- UC_Contact
 
-S -- UC1
-S -- UC2
-S -- UC3
-S -- UC4
-S -- UC5
-S -- UC6
-
-' Relation de dépendance (optionnelle)
-UC4 .> UC3 : <<extends>>
-
+' Optionnel : relations de dépendance/extension
+UC_ProjectDetails .> UC_Projects : <<extend>>
 @enduml
