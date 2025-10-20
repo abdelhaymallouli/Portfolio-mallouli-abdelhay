@@ -4,7 +4,6 @@ This README provides step-by-step instructions to set up, preview, and export th
 
 ## Prerequisites
 - **Node.js**: Install Node.js (version 16 or higher) from [https://nodejs.org/](https://nodejs.org/). Required for Marp CLI.
-- **VS Code** (optional): Install Visual Studio Code from [https://code.visualstudio.com/](https://code.visualstudio.com/) if using the VS Code extension.
 - **Presentation File**: Ensure `portfolio_presentation.md` is saved in a folder. Place image files (e.g., `image1.png`, `image2.png`, etc.) in the same folder, or update image paths in the Markdown file if they are elsewhere.
 - **Chromium-based Browser** (for PDF export): Install Google Chrome or another Chromium-based browser for PDF export via Marp CLI.
 
