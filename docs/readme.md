@@ -37,7 +37,7 @@ The Marp CLI allows you to preview and export the presentation from your termina
 4. **Export to HTML**:
    - To create an HTML file for offline viewing or sharing, run:
      ```bash
-     marp portfolio_presentation.md -o presentation.html
+     marp portfolio_presentation.md -o index.html
      ```
    - This generates `presentation.html` in the same folder. Open it in any browser.
 
