@@ -1,0 +1,32 @@
+classDiagram
+    class Developer {
+        +id : int
+        +name : string
+        +title : string
+        +location : string
+        +bio : string
+        +email : string
+        +social_links : array
+    }
+
+    class Skills {
+        +id : int
+        +name : string
+        +category : string
+        +level : int
+        +developer_id : int
+    }
+
+    class Projects {
+        +id : int
+        +title : string
+        +description : string
+        +image : string
+        +features : array
+        +developer_id : int
+    }
+
+    %% Relationships
+    Developer "1" --> "0..*" Skills : owns
+    Developer "1" --> "0..*" Projects : owns
+    Projects "1" --> "0..*" Skills : uses

@@ -13,7 +13,8 @@ style: |
   }
   img {
     max-height: 500px;
-     width: auto; 
+     width: auto;
+     margin: auto 20px; 
      object-fit: contain;
   }
 ---
@@ -55,3 +56,8 @@ style: |
 ## Conception: Maquette
 
 ![Maquette](imgs/image4.png)
+
+---
+## Conception: class diagram
+
+![class diagram](imgs/image5.png)
