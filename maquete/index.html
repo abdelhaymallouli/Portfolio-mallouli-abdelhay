@@ -26,7 +26,6 @@
                     <a href="index.html" class="text-sky-400 hover:text-sky-300 transition duration-300">Home</a>
                     <a href="projects.html" class="text-gray-300 hover:text-sky-400 transition duration-300">Projects</a>
                     <a href="about.html" class="text-gray-300 hover:text-sky-400 transition duration-300">About</a>
-                    <a href="#contact" class="text-gray-300 hover:text-sky-400 transition duration-300">Contact</a>
                 </div>
                 <div class="md:hidden">
                     <button class="text-gray-300 hover:text-sky-400">
@@ -42,7 +41,6 @@
     <!-- Hero Section -->
     <main class="pt-16">
         <section class="min-h-screen flex items-center justify-center relative overflow-hidden" id="home">
-            <!-- Background Gradient -->
             <div class="absolute inset-0 bg-gradient-to-br from-sky-900/20 via-gray-900 to-emerald-900/20"></div>
             <div class="absolute top-20 left-10 w-72 h-72 bg-sky-500/10 rounded-full filter blur-3xl"></div>
             <div class="absolute bottom-20 right-10 w-96 h-96 bg-emerald-500/10 rounded-full filter blur-3xl"></div>
@@ -56,13 +54,12 @@
                     <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
                         I craft elegant and functional web experiences using modern technologies. Specializing in full-stack development with HTML, CSS, JavaScript, PHP, Laravel, and Tailwind CSS. Passionate about creating responsive, user-friendly applications that solve real-world problems.
                     </p>
-                    
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="projects.html" class="px-8 py-4 bg-gradient-to-r from-sky-500 to-emerald-500 text-white font-semibold rounded-2xl shadow-lg hover:shadow-sky-500/50 hover:scale-105 transition duration-300">
                             View My Projects
                         </a>
-                        <a href="#contact" class="px-8 py-4 bg-gray-800 text-white font-semibold rounded-2xl border-2 border-sky-500/50 hover:bg-gray-700 hover:border-sky-400 hover:scale-105 transition duration-300">
-                            Contact Me
+                        <a href="about.html" class="px-8 py-4 bg-gray-800 text-white font-semibold rounded-2xl border-2 border-sky-500/50 hover:bg-gray-700 hover:border-sky-400 hover:scale-105 transition duration-300">
+                            About Me
                         </a>
                     </div>
                 </div>
@@ -108,7 +105,7 @@
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div class="flex justify-center">
-                        <img src="https://t4.ftcdn.net/jpg/05/50/45/65/360_F_550456541_mMBkyPx1G6XtqPYrT8mG12O8Uz5XBTCZ.jpg" alt="Professional profile of Ahmed, web developer" class="rounded-2xl shadow-lg w-64 h-64 object-cover">
+                        <img src="https://t4.ftcdn.net/jpg/05/50/45/65/360_F_550456541_mMBkyPx1G6XtqPYrT8mG12O8Uz5XBTCZ.jpg" alt="Professional profile of Abdelhay, web developer" class="rounded-2xl shadow-lg w-64 h-64 object-cover">
                     </div>
                     <div class="flex flex-col justify-center">
                         <p class="text-gray-300 text-lg leading-relaxed mb-6">
@@ -124,145 +121,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section class="py-20 bg-gradient-to-br from-sky-900/20 via-gray-900 to-emerald-900/20" id="contact">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
-                    <span class="bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">Get In Touch</span>
-                </h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <!-- Contact Form -->
-                    <div class="bg-gray-800 rounded-2xl p-8 md:p-12">
-                        <h3 class="text-2xl font-bold mb-6 text-sky-400">Send Me a Message</h3>
-                        <form id="contact-form" class="space-y-6">
-                            <div>
-                                <label for="name" class="block text-gray-300 font-semibold mb-2">Your Name</label>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    name="name" 
-                                    class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition duration-300" 
-                                    placeholder="John Doe"
-                                    required
-                                >
-                                <p class="text-red-400 text-sm mt-1 hidden" id="name-error">Please enter your name.</p>
-                            </div>
-
-                            <div>
-                                <label for="email" class="block text-gray-300 font-semibold mb-2">Your Email</label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition duration-300" 
-                                    placeholder="john@example.com"
-                                    required
-                                >
-                                <p class="text-red-400 text-sm mt-1 hidden" id="email-error">Please enter a valid email address.</p>
-                            </div>
-
-                            <div>
-                                <label for="subject" class="block text-gray-300 font-semibold mb-2">Subject</label>
-                                <input 
-                                    type="text" 
-                                    id="subject" 
-                                    name="subject" 
-                                    class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition duration-300" 
-                                    placeholder="Project Inquiry"
-                                    required
-                                >
-                                <p class="text-red-400 text-sm mt-1 hidden" id="subject-error">Please enter a subject.</p>
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-gray-300 font-semibold mb-2">Message</label>
-                                <textarea 
-                                    id="message" 
-                                    name="message" 
-                                    rows="6" 
-                                    class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition duration-300 resize-none" 
-                                    placeholder="Tell me about your project..."
-                                    required
-                                ></textarea>
-                                <p class="text-red-400 text-sm mt-1 hidden" id="message-error">Please enter your message.</p>
-                            </div>
-
-                            <div id="form-message" class="text-green-400 text-sm hidden"></div>
-
-                            <button 
-                                type="submit" 
-                                class="w-full px-8 py-4 bg-gradient-to-r from-sky-500 to-emerald-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-sky-500/50 hover:scale-105 transition duration-300"
-                            >
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-
-                    <!-- Contact Info -->
-                    <div class="space-y-8">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-6 text-emerald-400">Contact Information</h3>
-                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                                Feel free to reach out through any of these channels. I typically respond within 24 hours.
-                            </p>
-                        </div>
-
-                        <!-- Contact Cards -->
-                        <div class="space-y-6">
-                            <!-- Email Card -->
-                            <div class="bg-gray-800 rounded-2xl p-6 hover:bg-gray-700 hover:scale-105 transition duration-300">
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 w-14 h-14 bg-sky-500/20 rounded-xl flex items-center justify-center mr-4">
-                                        <svg class="w-7 h-7 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-sky-400 mb-2">Email</h4>
-                                        <p class="text-gray-300">ahmed@example.com</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Location Card -->
-                            <div class="bg-gray-800 rounded-2xl p-6 hover:bg-gray-700 hover:scale-105 transition duration-300">
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center mr-4">
-                                        <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path>
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-emerald-400 mb-2">Location</h4>
-                                        <p class="text-gray-300">New York, NY, USA</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Social Media Card -->
-                            <div class="bg-gray-800 rounded-2xl p-6 hover:bg-gray-700 hover:scale-105 transition duration-300">
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 w-14 h-14 bg-sky-500/20 rounded-xl flex items-center justify-center mr-4">
-                                        <svg class="w-7 h-7 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-sky-400 mb-2">Social Media</h4>
-                                        <p class="text-gray-300">
-                                            <a href="https://x.com/abdelhaym" class="text-sky-400 hover:text-sky-300 transition duration-300">X Profile</a> | 
-                                            <a href="https://linkedin.com/in/abdelhaym" class="text-sky-400 hover:text-sky-300 transition duration-300">LinkedIn</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -273,17 +131,17 @@
                     © 2025 Abdelhay. All rights reserved.
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-sky-400 transition duration-300">
+                    <a href="https://github.com/abdelhaymallouli" class="text-gray-400 hover:text-sky-400 transition duration-300">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-sky-400 transition duration-300">
+                    <a href="https://linkedin.com/in/abdelhaym" class="text-gray-400 hover:text-sky-400 transition duration-300">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                         </svg>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-sky-400 transition duration-300">
+                    <a href="mailto:abdelhay@example.com" class="text-gray-400 hover:text-sky-400 transition duration-300">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
                         </svg>
@@ -299,7 +157,6 @@
             <a href="index.html" class="text-gray-300 text-2xl hover:text-sky-400 transition duration-300">Home</a>
             <a href="projects.html" class="text-gray-300 text-2xl hover:text-sky-400 transition duration-300">Projects</a>
             <a href="about.html" class="text-gray-300 text-2xl hover:text-sky-400 transition duration-300">About</a>
-            <a href="#contact" class="text-gray-300 text-2xl hover:text-sky-400 transition duration-300">Contact</a>
             <button class="text-gray-300 hover:text-sky-400" onclick="toggleMobileMenu()">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -316,57 +173,6 @@
         }
 
         document.querySelector('.md\\:hidden button').addEventListener('click', toggleMobileMenu);
-
-        // Contact Form Validation and Submission
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Get form fields
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value.trim();
-            const message = document.getElementById('message').value.trim();
-            const formMessage = document.getElementById('form-message');
-
-            // Reset error messages
-            document.getElementById('name-error').classList.add('hidden');
-            document.getElementById('email-error').classList.add('hidden');
-            document.getElementById('subject-error').classList.add('hidden');
-            document.getElementById('message-error').classList.add('hidden');
-            formMessage.classList.add('hidden');
-
-            let isValid = true;
-
-            // Validate fields
-            if (!name) {
-                document.getElementById('name-error').classList.remove('hidden');
-                isValid = false;
-            }
-            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                document.getElementById('email-error').classList.remove('hidden');
-                isValid = false;
-            }
-            if (!subject) {
-                document.getElementById('subject-error').classList.remove('hidden');
-                isValid = false;
-            }
-            if (!message) {
-                document.getElementById('message-error').classList.remove('hidden');
-                isValid = false;
-            }
-
-            // If valid, simulate form submission
-            if (isValid) {
-                formMessage.classList.remove('hidden');
-                formMessage.textContent = 'Thank you! Your message has been sent successfully.';
-                
-                // Reset form
-                document.getElementById('contact-form').reset();
-
-                // Simulate sending data (replace with actual API call if needed)
-                console.log('Form Data:', { name, email, subject, message });
-            }
-        });
     </script>
 </body>
 </html>
