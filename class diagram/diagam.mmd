@@ -1,32 +1,31 @@
 classDiagram
     class Developer {
-        +id : int
-        +name : string
-        +title : string
-        +location : string
-        +bio : string
-        +email : string
-        +social_links : array
+        +int id
+        +string first_name
+        +string last_name
+        +string title
+        +string bio
+        +string email
+        +string phone
+        +string profile_picture
     }
 
-    class Skills {
-        +id : int
-        +name : string
-        +category : string
-        +level : int
-        +developer_id : int
+    class Project {
+        +int id
+        +string title
+        +string description
+        +string image
+        +string github_link
+        +string demo_link
+        +date start_date
+        +date end_date
     }
 
-    class Projects {
-        +id : int
-        +title : string
-        +description : string
-        +image : string
-        +features : array
-        +developer_id : int
+    class Technologies {
+        +int id
+        +string name
     }
 
     %% Relationships
-    Developer "1" --> "0..*" Skills : owns
-    Developer "1" --> "0..*" Projects : owns
-    Projects "1" --> "0..*" Skills : uses
+    Developer "1" --> "" Project : has
+    Project "1" --> "" Technologies : uses
