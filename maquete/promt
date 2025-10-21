@@ -1,0 +1,80 @@
+Create a modern, professional, multi-page personal portfolio website using only HTML and Tailwind CSS.
+Do NOT use any JavaScript frameworks, React, Vue, or Laravel — only pure HTML and Tailwind (via CDN).
+
+🎯 Objective:
+Build a complete, responsive, and visually stunning developer portfolio that includes at least three pages:
+1. Home
+2. Projects
+3. Project Details
+(Optional: About or Contact page)
+
+All pages must share the same modern design system, consistent colors, typography, and layout.
+
+---
+
+📁 PAGE STRUCTURE:
+
+### 🏠 Home Page (index.html)
+- Hero section introducing me: “Hi, I’m **Abdelhay Mallouli** — a Web Developer.”
+- Short intro paragraph about who I am and what I specialize in (HTML, CSS, JavaScript, PHP, Laravel, Tailwind).
+- Call-to-action buttons: “View My Projects” and “Contact Me”.
+- Use a modern layout with soft gradients, elegant typography, and subtle animations using Tailwind utilities.
+- Add a background gradient or minimal abstract shape decoration.
+
+### 💼 Projects Page (projects.html)
+- Section title: “My Projects”.
+- Display several project cards (4–6) in a grid layout.
+- Each project card includes:
+  - Project image (placeholder)
+  - Title
+  - Short description
+  - A button “View Details” linking to the project details page.
+- Hover effects on cards (scale, shadow, color transitions).
+- Responsive design: 1 column on mobile, 2–3 columns on larger screens.
+
+### 📘 Project Details Page (project-details.html)
+- Header with project title and hero image.
+- Detailed description of the project.
+- Technologies used displayed as Tailwind badges (HTML, CSS, PHP, Laravel, MySQL, etc.).
+- “Back to Projects” button at the bottom.
+- Layout: image on the left, text on the right (responsive for small screens).
+- Professional typography and balanced white space.
+
+### 👤 (Optional) About Page (about.html)
+- My photo (or placeholder image).
+- A detailed bio with my background, skills, and motivation.
+- List of skills using Tailwind badges or progress bars.
+- Clean and symmetrical layout with clear visual hierarchy.
+
+### ✉️ (Optional) Contact Page (contact.html)
+- Tailwind-styled contact form:
+  - Name
+  - Email
+  - Message
+- Submit button with modern hover/focus effects.
+- Include my social media links (GitHub, LinkedIn, Email) as icons.
+
+---
+
+🎨 STYLE GUIDE (Modern + Professional):
+- Use Tailwind CSS via CDN.
+- No custom CSS files — only Tailwind utility classes.
+- Font: **Inter**, **Poppins**, or **Plus Jakarta Sans** (via Google Fonts).
+- Theme: dark & elegant.
+  - Background: bg-gray-900
+  - Text: text-gray-100
+  - Accent color: text-sky-400 or text-emerald-400
+- Add subtle hover transitions: transition, duration-300, hover:scale-105
+- Use rounded corners (rounded-2xl) and shadow effects (shadow-lg).
+- Consistent navbar and footer across all pages.
+
+---
+
+🧩 OUTPUT STRUCTURE:
+
+/portfolio/ ├── index.html ├── projects.html ├── project-details.html ├── about.html (optional) ├── contact.html (optional) └── /images/ (for placeholder images)
+
+
+Each page must have a `<head>` (with Tailwind CDN and font link), `<header>`, `<main>`, and `<footer>`.
+
+Make the design **look like a professional developer’s portfolio** — clean, modern, minimalist, and ready to showcase real projects.
