@@ -19,9 +19,8 @@ class PortfolioController extends Controller
     public function home()
     {
         $profile = $this->developerService->getProfile();
-        $skills = $this->developerService->getSkills();
 
-        return view('home', compact('profile', 'skills'));
+        return view('home', compact('profile'));
     }
 
     public function projects()
@@ -43,7 +42,6 @@ class PortfolioController extends Controller
     public function about()
     {
         $profile = $this->developerService->getProfile();
-        $skills = $this->developerService->getSkills();
-        return view('about', compact('profile', 'skills'));   
+        return view('about', compact('profile'));   
     }
 }
