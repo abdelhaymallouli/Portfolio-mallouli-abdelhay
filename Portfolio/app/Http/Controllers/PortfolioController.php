@@ -16,6 +16,8 @@ class PortfolioController extends Controller
         $this->projectService = $projectService;
     }
 
+
+
     public function home()
     {
         $profile = $this->developerService->getProfile();
