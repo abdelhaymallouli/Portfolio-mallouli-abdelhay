@@ -27,7 +27,7 @@ class PortfolioController extends Controller
 
     public function projects()
     {
-        $projects = $this->projectService->getProjects();
+       $projects = $this->projectService->getProjects();
 
         return view('projects', compact('projects'));
     }
@@ -38,7 +38,7 @@ class PortfolioController extends Controller
         if (!$project) {
             abort(404);
         }
-        return view('project.show', compact('project'));
+        return view('project-details', compact('project'));
     }
 
     public function about()
